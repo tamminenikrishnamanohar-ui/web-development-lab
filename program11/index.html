@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        header {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 25px;
+        }
+        nav {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        .newspaper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+        .news {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .news h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .news p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 700px) {
+            .newspaper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE DAILY NEWS</h1>
+        <p>Your Daily Newspaper</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Sports</a>
+        <a href="#">Technology</a>
+    </nav>
+    <main class="newspaper">
+        <section class="news">
+            <h2>Technology News</h2>
+            <p>
+                Technology is changing the world.
+                New inventions are making our lives
+                easier and faster.
+            </p>
+        </section>
+        <section class="news">
+            <h2>Sports News</h2>
+            <p>
+                Sports help people stay healthy.
+                Many international tournaments are
+                being organised around the world.
+            </p>
+        </section>
+        <section class="news">
+            <h2>World News</h2>
+            <p>
+                Countries are working together
+                to improve education, business
+                and international relations.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2026 Daily News</p>
+    </footer>
+
+</body>
+</html>
