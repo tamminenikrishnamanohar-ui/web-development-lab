@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox vs CSS Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        h2 {
+            margin: 25px 0 15px;
+            color: #333;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+            background-color: white;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            background-color: white;
+            padding: 20px;
+        }
+        .flex-container div,
+        .grid-container div {
+            background-color: steelblue;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 30px;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox vs CSS Grid</h1>
+        <p>Understanding CSS Layout Systems</p>
+    </header>
+    <h2>1. Flexbox Layout</h2>
+    <section class="flex-container">
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Contact</div>
+    </section>
+    <h2>2. Grid Layout</h2>
+    <section class="grid-container">
+        <div>Home</div>
+        <div>About</div>
+        <div>Services</div>
+        <div>Contact</div>
+    </section>
+    <footer>
+        <p>Copyright 2026 | Learning CSS Layouts</p>
+    </footer>
+</body>
+</html>
