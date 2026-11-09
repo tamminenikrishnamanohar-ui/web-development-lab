@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        header p {
+            margin-top: 10px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card h2 {
+            padding: 15px;
+            color: #333;
+        }
+        .card p {
+            padding: 0 15px 20px;
+            color: #666;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 600px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Welcome to My Projects</p>
+    </header>
+    <section class="projects">
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=Portfolio" alt="Portfolio Project">
+            <h2>Portfolio Website</h2>
+            <p>A personal website to display my skills and projects.</p>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=Shopping" alt="Shopping Project">
+            <h2>Shopping Website</h2>
+            <p>An online shopping website for buying products.</p>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=Student" alt="Student Project">
+            <h2>Student Management</h2>
+            <p>A website to manage student details and records.</p>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=Weather" alt="Weather Project">
+            <h2>Weather App</h2>
+            <p>An application that displays weather information.</p>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=College" alt="College Project">
+            <h2>College Website</h2>
+            <p>A website containing college information and details.</p>
+        </div>
+        <div class="card">
+            <img src="https://placehold.co/400x200?text=Calculator" alt="Calculator Project">
+            <h2>Calculator</h2>
+            <p>A simple calculator project for basic calculations.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright 2026 My Portfolio</p>
+    </footer>
+</body>
+</html>
